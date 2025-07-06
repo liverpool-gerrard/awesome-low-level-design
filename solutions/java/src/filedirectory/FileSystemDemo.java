@@ -24,7 +24,7 @@ public class FileSystemDemo {
         searchParams.put("minSize", 5);
         searchParams.put("maxSize", 50);
 
-        List<AbstractNode> foundNodes = fs.searchNodes("/a", strategy, searchParams);
+        List<AbstractNode> foundNodes = fs.search("/a", strategy, searchParams);
 
         for (AbstractNode node : foundNodes) {
             if (node instanceof FileNode) {
